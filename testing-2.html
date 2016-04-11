@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  
+  
+<!--begin head-->  
+<head>
+    <title>Number Calc
+    </title>
+  
+<style type="text/css">
+    @media only screen and (max-width: 480px){
+        .emailButton{
+            max-width:600px !important;
+            width:100% !important;
+        }
+
+        .emailButton a{
+            display:block !important;
+            font-size:18px !important;
+        }
+  </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    
+      <!--begin body-->
+      <body>
+      
+      <h3>Enter integers</h3>
+      
+      
+        <!--user form-->
+
+    <form>
+        <input id="myNumber" type="number" value="2">
+    </form>
+
+
+    <p>Each time the user enters a number, update the display to show how many numbers have been entered, the sum of the numbers, and the average of the numbers.</p>
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo">
+    </p>
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myNumber").value;
+    document.getElementById("demo").innerHTML = x;
+    }
+    </script>   
+  
+      
+</body>
+</html>
