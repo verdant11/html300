@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- link to external style sheets (best practice with style sheets)-->
+    <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"
+    rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.10.2.js">
+    </script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js">
+    </script>
+    <!--  <link href="css/styles.css" rel="stylesheet" type="text/css">-->
+
+    <style type="text/css">
+
+    body {
+    background-color: #FAEBD7;/*each element can have its own background color*/
+    color:#483d37; /*each element can change the font color inside it */
+    margin: 0 auto;
+    width: 900px;
+    font-family: Helvetica;
+    font-size: 16px; 
+    }
+
+
+    input{
+    width:4em;
+    display:block;
+    }
+
+    </style>
+
+    <title>Enter Numbers</title>
+</head>
+
+<body class="page">
+    <!-- everything that is visual goes in the body tag  -->
+
+
+    <header>
+        <!-- the "banner" area or title of the page-->
+
+
+        <h1>Enter numbers in each field to see the average and sum</h1>
+        <!-- only h1 per page (for SEO purposes) -->
+    </header>
+
+
+    <div id="mainContent">
+        <!-- Sentence   -->
+        <br>
+        <br>
+
+
+        <!--<form id="boxes" name="boxes">
+            Value 1:<input name="textBox1" onkeyup="averageBoxes()" type="text"
+            value="15"> Value 2:<input name="textBox2" onkeyup="averageBoxes()"
+            type="text" value="10"> Value 3:<input name="textBox3" onkeyup=
+            "averageBoxes()" type="text" value="25"> Value 4:<input name=
+            "textBox4" onkeyup="averageBoxes()" type="text" value="20"> Avg
+            Val:<input name="textBox5" readonly type="text"> Sum
+            Val:<input name="textBox6" readonly type="text">
+        </form>-->
+        
+
+
+<!-- closing maincContent div tag -->
+  
+  <!-- Javascript -->
+</style>
+<script type="text/javascript">
+function averageBoxes(){
+var avg=(Math.abs(document.boxes.textBox1.value)+Math.abs(document.boxes.textBox2.value)+Math.abs(document.boxes.textBox3.value)+Math.abs(document.boxes.textBox4.value))/4
+if (avg!==avg)
+alert('Numbers Only Please!')
+document.boxes.textBox5.value=avg
+}
+</script>
+</head>
+<body onload="averageBoxes()">
+<form name="boxes">
+Value 1:<input name="textBox1" value=15 onkeyup="averageBoxes()" type="text">
+Value 2:<input name="textBox2" value=10 onkeyup="averageBoxes()" type="text">
+Value 3:<input name="textBox3" value=25 onkeyup="averageBoxes()" type="text">
+Value 4:<input name="textBox4" value=20 onkeyup="averageBoxes()" type="text">
+Avg Val:<input name="textBox5" readonly type="text">
+  
+   </script>  <!-- end Javascript -->
+ 
+ <!-- Failed code -->
+  
+/*
+<code to be commented out>
+<Other code to be commented out>
+<Some more code to be commented out>
+*/  
+  
+//* function sumBoxes(){
+      var sum=  
+(Math.abs(document.boxes.textBox1.value)+Math.abs(document.boxes.textBox2.value)+Math.abs(document.boxes.textBox3.value)+Math.abs(document.boxes.textBox4.value))
+       if (sum!==sum)
+   document.boxes.textBox6.value=sum
+       // }
+*//
+        <!-- Failed code -->
+         
+      
+      <!--  This is the footer section, only footer stuff -->
+
+
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
